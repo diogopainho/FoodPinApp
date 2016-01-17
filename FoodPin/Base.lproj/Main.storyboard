@@ -197,30 +197,87 @@
                                     <outlet property="delegate" destination="s6u-5O-50p" id="TI0-Nb-2yq"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cm7-pC-YXB">
-                                <rect key="frame" x="547" y="72" width="40" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="q3J-OY-OPb">
+                                <rect key="frame" x="547" y="72" width="40" height="85"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cm7-pC-YXB">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="09J-wZ-e9d"/>
+                                            <constraint firstAttribute="width" constant="40" id="BiT-y9-zFT"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Button" image="rating"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="RbT-cw-sZy" kind="presentation" identifier="showReview" id="ole-Sf-GZ1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9z-Ri-RXj">
+                                        <rect key="frame" x="0.0" y="45" width="40" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Bed-9a-r9l"/>
+                                            <constraint firstAttribute="width" constant="40" id="x5S-Ya-y7Z"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="map"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="L1o-tJ-FvM" kind="show" identifier="showMap" id="V1Y-BX-fsK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="5kC-bC-KQr"/>
-                                    <constraint firstAttribute="width" constant="40" id="TWT-Ip-W2c"/>
+                                    <constraint firstItem="N9z-Ri-RXj" firstAttribute="leading" secondItem="q3J-OY-OPb" secondAttribute="leading" id="5gw-ZY-zm5"/>
+                                    <constraint firstItem="N9z-Ri-RXj" firstAttribute="trailing" secondItem="q3J-OY-OPb" secondAttribute="trailingMargin" id="6gw-eI-qMd"/>
+                                    <constraint firstItem="Cm7-pC-YXB" firstAttribute="leading" secondItem="N9z-Ri-RXj" secondAttribute="leading" id="8rJ-up-T8X"/>
+                                    <constraint firstItem="N9z-Ri-RXj" firstAttribute="leading" secondItem="q3J-OY-OPb" secondAttribute="leading" id="91d-fG-RSW"/>
+                                    <constraint firstItem="Cm7-pC-YXB" firstAttribute="top" secondItem="q3J-OY-OPb" secondAttribute="top" id="Act-E2-TgS"/>
+                                    <constraint firstItem="Cm7-pC-YXB" firstAttribute="leading" secondItem="q3J-OY-OPb" secondAttribute="leading" id="C5r-gb-Kv5"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cm7-pC-YXB" secondAttribute="trailing" id="CwV-Dx-rhy"/>
+                                    <constraint firstItem="N9z-Ri-RXj" firstAttribute="leading" secondItem="q3J-OY-OPb" secondAttribute="leading" id="Eds-QH-9pM"/>
+                                    <constraint firstItem="N9z-Ri-RXj" firstAttribute="top" secondItem="q3J-OY-OPb" secondAttribute="top" constant="45" id="GCA-eP-jEi"/>
+                                    <constraint firstItem="Cm7-pC-YXB" firstAttribute="top" secondItem="q3J-OY-OPb" secondAttribute="topMargin" id="J6A-f6-FAo"/>
+                                    <constraint firstItem="Cm7-pC-YXB" firstAttribute="centerX" secondItem="N9z-Ri-RXj" secondAttribute="centerX" id="NiQ-ge-k2X"/>
+                                    <constraint firstItem="Cm7-pC-YXB" firstAttribute="centerX" secondItem="q3J-OY-OPb" secondAttribute="centerX" id="Paf-5J-dao"/>
+                                    <constraint firstAttribute="trailing" secondItem="N9z-Ri-RXj" secondAttribute="trailing" id="ScN-QI-xeZ"/>
+                                    <constraint firstItem="N9z-Ri-RXj" firstAttribute="centerX" secondItem="q3J-OY-OPb" secondAttribute="centerX" id="ScO-Ur-IpW"/>
+                                    <constraint firstItem="Cm7-pC-YXB" firstAttribute="trailing" secondItem="q3J-OY-OPb" secondAttribute="trailingMargin" id="T97-qy-LOk"/>
+                                    <constraint firstAttribute="bottom" secondItem="N9z-Ri-RXj" secondAttribute="bottom" id="VMP-TJ-jKO"/>
+                                    <constraint firstItem="N9z-Ri-RXj" firstAttribute="bottom" secondItem="q3J-OY-OPb" secondAttribute="bottomMargin" id="Vg2-Dj-MNJ"/>
+                                    <constraint firstItem="N9z-Ri-RXj" firstAttribute="trailing" secondItem="Cm7-pC-YXB" secondAttribute="trailing" id="WP7-Xc-ZEG"/>
+                                    <constraint firstItem="N9z-Ri-RXj" firstAttribute="top" secondItem="Cm7-pC-YXB" secondAttribute="bottom" constant="5" id="YdY-SD-aCo"/>
+                                    <constraint firstItem="Cm7-pC-YXB" firstAttribute="top" secondItem="q3J-OY-OPb" secondAttribute="top" id="bK3-q0-fnU"/>
+                                    <constraint firstAttribute="bottom" secondItem="N9z-Ri-RXj" secondAttribute="bottom" id="c5C-s1-h2Y"/>
+                                    <constraint firstItem="Cm7-pC-YXB" firstAttribute="leading" secondItem="q3J-OY-OPb" secondAttribute="leading" id="czM-0B-VUM"/>
+                                    <constraint firstItem="Cm7-pC-YXB" firstAttribute="leading" secondItem="q3J-OY-OPb" secondAttribute="leading" id="fDi-tA-gb5"/>
+                                    <constraint firstItem="Cm7-pC-YXB" firstAttribute="top" secondItem="q3J-OY-OPb" secondAttribute="top" id="ht6-L3-kdU"/>
+                                    <constraint firstItem="N9z-Ri-RXj" firstAttribute="leading" secondItem="q3J-OY-OPb" secondAttribute="leading" id="iRV-7i-BEw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cm7-pC-YXB" secondAttribute="trailing" id="sum-rF-M5s"/>
+                                    <constraint firstItem="Cm7-pC-YXB" firstAttribute="top" secondItem="q3J-OY-OPb" secondAttribute="top" id="tOT-eb-tK2"/>
+                                    <constraint firstItem="N9z-Ri-RXj" firstAttribute="leading" secondItem="q3J-OY-OPb" secondAttribute="leadingMargin" id="tVE-MS-EzZ"/>
+                                    <constraint firstItem="Cm7-pC-YXB" firstAttribute="leading" secondItem="q3J-OY-OPb" secondAttribute="leading" id="uQo-eZ-KcJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="N9z-Ri-RXj" secondAttribute="trailing" id="vc6-OB-syX"/>
+                                    <constraint firstAttribute="bottom" secondItem="N9z-Ri-RXj" secondAttribute="bottom" id="x1x-of-Dz7"/>
+                                    <constraint firstItem="Cm7-pC-YXB" firstAttribute="leading" secondItem="q3J-OY-OPb" secondAttribute="leadingMargin" id="yO7-6u-6AC"/>
                                 </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Button" image="rating"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="RbT-cw-sZy" kind="presentation" identifier="showReview" id="ole-Sf-GZ1"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Ltg-EL-CgT" secondAttribute="trailing" id="6dW-Ir-ppr"/>
-                            <constraint firstItem="Cm7-pC-YXB" firstAttribute="top" secondItem="rxg-Im-gJQ" secondAttribute="bottom" constant="8" id="R7f-3m-1BB"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Cm7-pC-YXB" secondAttribute="trailing" constant="-7" id="t4j-w1-cEn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q3J-OY-OPb" secondAttribute="trailing" constant="-7" id="UBL-yh-0ha"/>
+                            <constraint firstItem="q3J-OY-OPb" firstAttribute="top" secondItem="rxg-Im-gJQ" secondAttribute="bottom" constant="8" symbolic="YES" id="lPP-U3-6Cq"/>
                             <constraint firstItem="QDU-iN-ZjU" firstAttribute="top" secondItem="Ltg-EL-CgT" secondAttribute="bottom" id="tNV-FV-SxJ"/>
                             <constraint firstItem="Ltg-EL-CgT" firstAttribute="leading" secondItem="5oP-Qb-02b" secondAttribute="leading" id="wA9-K8-HBX"/>
                             <constraint firstItem="Ltg-EL-CgT" firstAttribute="top" secondItem="5oP-Qb-02b" secondAttribute="top" id="zN2-gY-K5A"/>
@@ -393,7 +450,39 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vs1-D4-cBE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2262" y="341"/>
+            <point key="canvasLocation" x="1616" y="-403"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="YB0-U3-BLp">
+            <objects>
+                <viewController id="L1o-tJ-FvM" customClass="MapViewController" customModule="FoodPin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IUm-dJ-zLt"/>
+                        <viewControllerLayoutGuide type="bottom" id="ga4-KR-15g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gDw-n7-V8A">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Igk-kY-b2s">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Igk-kY-b2s" secondAttribute="trailing" id="BvW-gO-YMg"/>
+                            <constraint firstItem="Igk-kY-b2s" firstAttribute="leading" secondItem="gDw-n7-V8A" secondAttribute="leading" id="MFQ-gB-tgZ"/>
+                            <constraint firstItem="Igk-kY-b2s" firstAttribute="top" secondItem="gDw-n7-V8A" secondAttribute="top" id="Pmh-pM-zKO"/>
+                            <constraint firstItem="Igk-kY-b2s" firstAttribute="bottom" secondItem="ga4-KR-15g" secondAttribute="top" id="t0C-9d-lVN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Igk-kY-b2s" id="b0L-U0-hkm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qba-7n-eel" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2337" y="341"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="n8r-x0-lxc">
@@ -420,6 +509,7 @@
         <image name="dislike" width="84" height="84"/>
         <image name="good" width="256" height="256"/>
         <image name="great" width="256" height="256"/>
+        <image name="map" width="48" height="48"/>
         <image name="rating" width="256" height="256"/>
     </resources>
 </document>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AddRestaurantController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet var imageView:UIImageView!
@@ -14,10 +15,12 @@ class AddRestaurantController: UITableViewController, UIImagePickerControllerDel
     @IBOutlet var nameTextField:UITextField!
     @IBOutlet var typeTextField:UITextField!
     @IBOutlet var locationTextField:UITextField!
+    @IBOutlet var phoneNumberTextField:UITextField!
     @IBOutlet var yesButton:UIButton!
     @IBOutlet var noButton:UIButton!
     
     var isVisited = true
+    var restaurant:Restaurant!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,6 +75,7 @@ class AddRestaurantController: UITableViewController, UIImagePickerControllerDel
         let name = nameTextField.text
         let type = typeTextField.text
         let location = locationTextField.text
+        let phoneNumber = phoneNumberTextField.text
         
         //Validate input fields
         if name == "" || type == "" || location == "" {
@@ -82,12 +86,29 @@ class AddRestaurantController: UITableViewController, UIImagePickerControllerDel
             return
         }
         
+        if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
+            restaurant = NSEntityDescription.insertNewObjectForEntityForName("Restaurant", inManagedObjectContext: managedObjectContext) as! Restaurant
+            restaurant.name = name!
+            restaurant.type = type!
+            restaurant.location = location!
+            restaurant.phoneNumber = phoneNumber!
+            if let restaurantImage = imageView.image { restaurant.image = UIImagePNGRepresentation(restaurantImage)}
+            restaurant.isVisited = isVisited
+            
+            do {
+                try managedObjectContext.save()
+            } catch {
+                print(error)
+                return
+            }
+        }
+        
         //Dismiss the view controller
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    @IBAction func toggleBeenHereButton(sender: UIButton){
-        //Yes button clicked
+    @IBAction func toggleBeenHereButton(sender: UIButton) {
+        // Yes button clicked
         if sender == yesButton {
             isVisited = true
             yesButton.backgroundColor = UIColor(red: 235.0/255.0, green: 73.0/255.0, blue: 27.0/255.0, alpha: 1.0)
@@ -98,7 +119,6 @@ class AddRestaurantController: UITableViewController, UIImagePickerControllerDel
             noButton.backgroundColor = UIColor(red: 235.0/255.0, green: 73.0/255.0, blue: 27.0/255.0, alpha: 1.0)
         }
     }
-    
 
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

@@ -590,32 +590,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="71"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jR-3h-Jbv">
-                                                    <rect key="frame" x="16" y="33" width="46" height="25"/>
-                                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="46" id="RU5-Ug-a8k"/>
-                                                    </constraints>
-                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <state key="normal" title="YES"/>
-                                                    <connections>
-                                                        <action selector="toggleBeenHereButton:" destination="Vya-6w-khW" eventType="touchUpInside" id="bNf-I1-H1w"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5f-2i-QCt">
-                                                    <rect key="frame" x="70" y="33" width="46" height="25"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="46" id="jDP-tR-CMn"/>
-                                                    </constraints>
-                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <state key="normal" title="NO"/>
-                                                    <connections>
-                                                        <action selector="toggleBeenHereButton:" destination="Vya-6w-khW" eventType="touchUpInside" id="xva-8D-EkG"/>
-                                                    </connections>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have You Been Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ky-WX-EVK">
-                                                    <rect key="frame" x="8" y="8" width="157" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHONE NUMBER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ky-WX-EVK">
+                                                    <rect key="frame" x="8" y="8" width="132" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="iai-XQ-jbM"/>
                                                     </constraints>
@@ -623,17 +599,73 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Restaurant Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dhp-82-wA8">
+                                                    <rect key="frame" x="8" y="33" width="577" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="3jR-3h-Jbv" firstAttribute="leading" secondItem="uA0-Er-Ey9" secondAttribute="leadingMargin" constant="8" id="779-GE-Kj6"/>
-                                                <constraint firstItem="7Ky-WX-EVK" firstAttribute="top" secondItem="uA0-Er-Ey9" secondAttribute="topMargin" id="BAs-2I-QwU"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="3jR-3h-Jbv" secondAttribute="bottom" constant="5" id="YQM-hx-8RH"/>
-                                                <constraint firstItem="M5f-2i-QCt" firstAttribute="leading" secondItem="3jR-3h-Jbv" secondAttribute="trailing" constant="8" symbolic="YES" id="hvY-l6-azP"/>
-                                                <constraint firstItem="3jR-3h-Jbv" firstAttribute="top" secondItem="7Ky-WX-EVK" secondAttribute="bottom" constant="4" id="m6n-95-juK"/>
-                                                <constraint firstItem="3jR-3h-Jbv" firstAttribute="baseline" secondItem="M5f-2i-QCt" secondAttribute="firstBaseline" id="mbb-oy-8e1"/>
-                                                <constraint firstItem="7Ky-WX-EVK" firstAttribute="leading" secondItem="uA0-Er-Ey9" secondAttribute="leadingMargin" id="tO2-Ed-UPx"/>
-                                                <constraint firstItem="M5f-2i-QCt" firstAttribute="top" secondItem="3jR-3h-Jbv" secondAttribute="top" id="yrG-P2-gtW"/>
-                                                <constraint firstItem="M5f-2i-QCt" firstAttribute="baseline" secondItem="3jR-3h-Jbv" secondAttribute="firstBaseline" id="z31-Tv-olE"/>
+                                                <constraint firstItem="dhp-82-wA8" firstAttribute="bottom" secondItem="uA0-Er-Ey9" secondAttribute="bottomMargin" id="1PQ-Xb-Go9"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="dhp-82-wA8" secondAttribute="trailing" constant="7" id="8Y9-Mh-RTX"/>
+                                                <constraint firstItem="dhp-82-wA8" firstAttribute="leading" secondItem="uA0-Er-Ey9" secondAttribute="leadingMargin" id="LX3-JE-epm"/>
+                                                <constraint firstItem="dhp-82-wA8" firstAttribute="top" secondItem="7Ky-WX-EVK" secondAttribute="bottom" constant="4" id="ZpT-Id-XWT"/>
+                                                <constraint firstItem="dhp-82-wA8" firstAttribute="leading" secondItem="7Ky-WX-EVK" secondAttribute="leading" id="iIq-OK-NLO"/>
+                                                <constraint firstItem="7Ky-WX-EVK" firstAttribute="top" secondItem="uA0-Er-Ey9" secondAttribute="topMargin" id="oHc-r5-TH7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="RtE-PC-jdN">
+                                        <rect key="frame" x="0.0" y="602" width="600" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RtE-PC-jdN" id="Z9s-Np-FdM">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="71"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqJ-1w-9Ea">
+                                                    <rect key="frame" x="16" y="33" width="46" height="25"/>
+                                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="46" id="RRi-qP-bYi"/>
+                                                    </constraints>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <state key="normal" title="YES"/>
+                                                    <connections>
+                                                        <action selector="toggleBeenHereButton:" destination="Vya-6w-khW" eventType="touchUpInside" id="V3g-Da-RAd"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odY-88-PUV">
+                                                    <rect key="frame" x="70" y="33" width="46" height="25"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="46" id="heL-RY-2q8"/>
+                                                    </constraints>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <state key="normal" title="NO"/>
+                                                    <connections>
+                                                        <action selector="toggleBeenHereButton:" destination="Vya-6w-khW" eventType="touchUpInside" id="nKx-pX-z1i"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have You Been Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTA-2B-B5l">
+                                                    <rect key="frame" x="8" y="8" width="157" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="kBB-3E-UeX"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="odY-88-PUV" firstAttribute="baseline" secondItem="AqJ-1w-9Ea" secondAttribute="firstBaseline" id="93c-94-q4o"/>
+                                                <constraint firstItem="AqJ-1w-9Ea" firstAttribute="baseline" secondItem="odY-88-PUV" secondAttribute="firstBaseline" id="Eg4-0s-iZv"/>
+                                                <constraint firstItem="AqJ-1w-9Ea" firstAttribute="top" secondItem="YTA-2B-B5l" secondAttribute="bottom" constant="4" id="S9G-Ra-O02"/>
+                                                <constraint firstItem="AqJ-1w-9Ea" firstAttribute="leading" secondItem="Z9s-Np-FdM" secondAttribute="leadingMargin" constant="8" id="T9l-Bb-BN4"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="AqJ-1w-9Ea" secondAttribute="bottom" constant="5" id="UBE-Ki-s7b"/>
+                                                <constraint firstItem="YTA-2B-B5l" firstAttribute="leading" secondItem="Z9s-Np-FdM" secondAttribute="leadingMargin" id="oJv-zS-cP8"/>
+                                                <constraint firstItem="YTA-2B-B5l" firstAttribute="top" secondItem="Z9s-Np-FdM" secondAttribute="topMargin" id="oPN-3l-nNN"/>
+                                                <constraint firstItem="odY-88-PUV" firstAttribute="leading" secondItem="AqJ-1w-9Ea" secondAttribute="trailing" constant="8" symbolic="YES" id="oUS-pg-hEN"/>
+                                                <constraint firstItem="odY-88-PUV" firstAttribute="top" secondItem="AqJ-1w-9Ea" secondAttribute="top" id="pY9-Rf-N8X"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -663,9 +695,10 @@
                         <outlet property="imageView" destination="x7L-UA-oPG" id="bZV-2H-JMO"/>
                         <outlet property="locationTextField" destination="nQS-ic-Lfs" id="3rd-Y6-ugf"/>
                         <outlet property="nameTextField" destination="tWI-mv-QAx" id="Z2S-dX-JzK"/>
-                        <outlet property="noButton" destination="M5f-2i-QCt" id="5EK-hf-xiG"/>
+                        <outlet property="noButton" destination="odY-88-PUV" id="gSV-YW-nox"/>
+                        <outlet property="phoneNumberTextField" destination="dhp-82-wA8" id="Bpj-eX-s2M"/>
                         <outlet property="typeTextField" destination="rGv-eD-dmW" id="ftp-Br-Vh1"/>
-                        <outlet property="yesButton" destination="3jR-3h-Jbv" id="YmI-jx-Agu"/>
+                        <outlet property="yesButton" destination="AqJ-1w-9Ea" id="w0M-kd-b3S"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="64J-v6-fEn" userLabel="First Responder" sceneMemberID="firstResponder"/>

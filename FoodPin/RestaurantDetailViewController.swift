@@ -25,7 +25,7 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         
         // Do any additional setup after loading the view.
         title = restaurant.name
-        restaurantImageView.image = UIImage(named: restaurant.image)
+        restaurantImageView.image = UIImage(data: restaurant.image!)
         tableView.backgroundColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 0.2)
         tableView.tableFooterView = UIView(frame: CGRectZero)
         tableView.separatorColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 0.8)
@@ -60,7 +60,9 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
             cell.valueLabel.text = restaurant.location
         case 3:
             cell.fieldLabel.text = "Been here"
-            cell.valueLabel.text = (restaurant.isVisited) ? "Yes, I've been here before" : "No"
+            if let isVisited = restaurant.isVisited?.boolValue {
+                cell.valueLabel.text = isVisited ? "Yes, I've been here before" : "No"
+            }
         case 4:
             cell.fieldLabel.text = "Phone number"
             cell.valueLabel.text = restaurant.phoneNumber
@@ -87,6 +89,15 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
             if let rating = reviewViewController.rating {
                 ratingButton.setImage(UIImage(named: rating), forState: UIControlState.Normal)
                 restaurant.rating = rating
+                
+                if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
+                    
+                    do {
+                        try managedObjectContext.save()
+                    } catch {
+                        print(error)
+                    }
+                }
             }
         }
     }

@@ -19,6 +19,7 @@
 		52921D2D1C4C0F01004054DF /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52921D2C1C4C0F01004054DF /* ReviewViewController.swift */; };
 		52921D2F1C4C191F004054DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52921D2E1C4C191F004054DF /* MapKit.framework */; };
 		52921D331C4C1CE9004054DF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52921D321C4C1CE9004054DF /* MapViewController.swift */; };
+		52921D351C4C297D004054DF /* AddRestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52921D341C4C297D004054DF /* AddRestaurantController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		52921D2C1C4C0F01004054DF /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		52921D2E1C4C191F004054DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		52921D321C4C1CE9004054DF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		52921D341C4C297D004054DF /* AddRestaurantController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRestaurantController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				52921D281C4BF4AD004054DF /* RestaurantDetailTableViewCell.swift */,
 				52921D2C1C4C0F01004054DF /* ReviewViewController.swift */,
 				52921D321C4C1CE9004054DF /* MapViewController.swift */,
+				52921D341C4C297D004054DF /* AddRestaurantController.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52921D351C4C297D004054DF /* AddRestaurantController.swift in Sources */,
 				52921D271C4BE64D004054DF /* Restaurant.swift in Sources */,
 				52649EAB1C4BAFCA009FE414 /* RestaurantTableViewController.swift in Sources */,
 				52921D2D1C4C0F01004054DF /* ReviewViewController.swift in Sources */,

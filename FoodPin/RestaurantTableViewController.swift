@@ -150,6 +150,23 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
         navigationController?.hidesBarsOnSwipe = true
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let hasViewedWalkthrough = defaults.boolForKey("hasViewedWalkthrough")
+        
+        if hasViewedWalkthrough {
+            return
+        }
+        
+        if let pageViewController = storyboard?.instantiateViewControllerWithIdentifier("WalkthroughController") as? WalkthroughPageViewController {
+            
+            presentViewController(pageViewController, animated: true, completion: nil)
+            
+        }
+    }
+    
     // MARK: - Actions
     
     @IBAction func unwindToHomeScreen(segue:UIStoryboardSegue){
@@ -221,6 +238,8 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
             return true
         }
     }
+    
+    
     
 
     /*

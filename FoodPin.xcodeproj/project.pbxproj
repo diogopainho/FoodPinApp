@@ -21,6 +21,8 @@
 		52921D331C4C1CE9004054DF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52921D321C4C1CE9004054DF /* MapViewController.swift */; };
 		52921D351C4C297D004054DF /* AddRestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52921D341C4C297D004054DF /* AddRestaurantController.swift */; };
 		52921D381C4C3D1A004054DF /* FoodPin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52921D361C4C3D1A004054DF /* FoodPin.xcdatamodeld */; };
+		52921D3A1C4D5B82004054DF /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52921D391C4D5B82004054DF /* WalkthroughContentViewController.swift */; };
+		52921D3C1C4D5D72004054DF /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52921D3B1C4D5D72004054DF /* WalkthroughPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		52921D321C4C1CE9004054DF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		52921D341C4C297D004054DF /* AddRestaurantController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRestaurantController.swift; sourceTree = "<group>"; };
 		52921D371C4C3D1A004054DF /* FoodPin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodPin.xcdatamodel; sourceTree = "<group>"; };
+		52921D391C4D5B82004054DF /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
+		52921D3B1C4D5D72004054DF /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 				52921D321C4C1CE9004054DF /* MapViewController.swift */,
 				52921D341C4C297D004054DF /* AddRestaurantController.swift */,
 				52921D361C4C3D1A004054DF /* FoodPin.xcdatamodeld */,
+				52921D391C4D5B82004054DF /* WalkthroughContentViewController.swift */,
+				52921D3B1C4D5D72004054DF /* WalkthroughPageViewController.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -173,6 +179,8 @@
 				52649EAB1C4BAFCA009FE414 /* RestaurantTableViewController.swift in Sources */,
 				52921D2D1C4C0F01004054DF /* ReviewViewController.swift in Sources */,
 				52649EAD1C4BB64E009FE414 /* RestaurantTableViewCell.swift in Sources */,
+				52921D3A1C4D5B82004054DF /* WalkthroughContentViewController.swift in Sources */,
+				52921D3C1C4D5D72004054DF /* WalkthroughPageViewController.swift in Sources */,
 				52921D381C4C3D1A004054DF /* FoodPin.xcdatamodeld in Sources */,
 				52921D291C4BF4AD004054DF /* RestaurantDetailTableViewCell.swift in Sources */,
 				52921D251C4BE0DB004054DF /* RestaurantDetailViewController.swift in Sources */,

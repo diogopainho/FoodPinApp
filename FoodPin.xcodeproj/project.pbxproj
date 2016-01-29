@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		521529F21C5B9FEE003ECC85 /* discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521529F11C5B9FEE003ECC85 /* discover.storyboard */; };
 		521529F51C5BA003003ECC85 /* about.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521529F31C5BA003003ECC85 /* about.storyboard */; };
+		521529F71C5BA1DB003ECC85 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521529F61C5BA1DB003ECC85 /* AboutTableViewController.swift */; };
+		521529F91C5BA791003ECC85 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521529F81C5BA791003ECC85 /* WebViewController.swift */; };
 		52649E991C4BAF1F009FE414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52649E981C4BAF1F009FE414 /* AppDelegate.swift */; };
 		52649E9E1C4BAF1F009FE414 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52649E9C1C4BAF1F009FE414 /* Main.storyboard */; };
 		52649EA01C4BAF1F009FE414 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52649E9F1C4BAF1F009FE414 /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		521529F11C5B9FEE003ECC85 /* discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = discover.storyboard; sourceTree = "<group>"; };
 		521529F41C5BA003003ECC85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/about.storyboard; sourceTree = "<group>"; };
+		521529F61C5BA1DB003ECC85 /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
+		521529F81C5BA791003ECC85 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		52649E951C4BAF1F009FE414 /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52649E981C4BAF1F009FE414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52649E9D1C4BAF1F009FE414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				52921D361C4C3D1A004054DF /* FoodPin.xcdatamodeld */,
 				52921D391C4D5B82004054DF /* WalkthroughContentViewController.swift */,
 				52921D3B1C4D5D72004054DF /* WalkthroughPageViewController.swift */,
+				521529F61C5BA1DB003ECC85 /* AboutTableViewController.swift */,
+				521529F81C5BA791003ECC85 /* WebViewController.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -183,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52921D351C4C297D004054DF /* AddRestaurantController.swift in Sources */,
+				521529F71C5BA1DB003ECC85 /* AboutTableViewController.swift in Sources */,
 				52921D271C4BE64D004054DF /* Restaurant.swift in Sources */,
 				52649EAB1C4BAFCA009FE414 /* RestaurantTableViewController.swift in Sources */,
 				52921D2D1C4C0F01004054DF /* ReviewViewController.swift in Sources */,
@@ -192,6 +199,7 @@
 				52921D381C4C3D1A004054DF /* FoodPin.xcdatamodeld in Sources */,
 				52921D291C4BF4AD004054DF /* RestaurantDetailTableViewCell.swift in Sources */,
 				52921D251C4BE0DB004054DF /* RestaurantDetailViewController.swift in Sources */,
+				521529F91C5BA791003ECC85 /* WebViewController.swift in Sources */,
 				52649E991C4BAF1F009FE414 /* AppDelegate.swift in Sources */,
 				52921D331C4C1CE9004054DF /* MapViewController.swift in Sources */,
 			);

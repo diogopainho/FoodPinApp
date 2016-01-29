@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521529F21C5B9FEE003ECC85 /* discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521529F11C5B9FEE003ECC85 /* discover.storyboard */; };
+		521529F51C5BA003003ECC85 /* about.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521529F31C5BA003003ECC85 /* about.storyboard */; };
 		52649E991C4BAF1F009FE414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52649E981C4BAF1F009FE414 /* AppDelegate.swift */; };
 		52649E9E1C4BAF1F009FE414 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52649E9C1C4BAF1F009FE414 /* Main.storyboard */; };
 		52649EA01C4BAF1F009FE414 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52649E9F1C4BAF1F009FE414 /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		521529F11C5B9FEE003ECC85 /* discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = discover.storyboard; sourceTree = "<group>"; };
+		521529F41C5BA003003ECC85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/about.storyboard; sourceTree = "<group>"; };
 		52649E951C4BAF1F009FE414 /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52649E981C4BAF1F009FE414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52649E9D1C4BAF1F009FE414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 			children = (
 				52649E981C4BAF1F009FE414 /* AppDelegate.swift */,
 				52649E9C1C4BAF1F009FE414 /* Main.storyboard */,
+				521529F31C5BA003003ECC85 /* about.storyboard */,
+				521529F11C5B9FEE003ECC85 /* discover.storyboard */,
 				52649E9F1C4BAF1F009FE414 /* Assets.xcassets */,
 				52649EA11C4BAF1F009FE414 /* LaunchScreen.storyboard */,
 				52649EA41C4BAF1F009FE414 /* Info.plist */,
@@ -162,6 +168,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				52649EA31C4BAF1F009FE414 /* LaunchScreen.storyboard in Resources */,
+				521529F51C5BA003003ECC85 /* about.storyboard in Resources */,
+				521529F21C5B9FEE003ECC85 /* discover.storyboard in Resources */,
 				52649EA01C4BAF1F009FE414 /* Assets.xcassets in Resources */,
 				52649E9E1C4BAF1F009FE414 /* Main.storyboard in Resources */,
 			);
@@ -192,6 +200,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		521529F31C5BA003003ECC85 /* about.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				521529F41C5BA003003ECC85 /* Base */,
+			);
+			name = about.storyboard;
+			sourceTree = "<group>";
+		};
 		52649E9C1C4BAF1F009FE414 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
